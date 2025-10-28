@@ -1,12 +1,12 @@
-site_name: GeekYash Docs
-site_url: 
+site_name: Mittal Docs
 site_author: Yash Mittal
 site_description: >-
   A personal documentation repository featuring concise notes, guides, troubleshooting logs, and verified code snippets for efficient full-stack development, tailored for personal reference and skill growth.
-
-# Repository
-# repo_name: harshsharma20503/docs
-# repo_url: https://github.com/harshsharma20503/docs
+site_url: https://geekyashmittal.me/Mittal-Docs/
+use_directory_urls: false
+# 👇 this line fixes blank page issue for subpath deployments
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/redirect-mkdocs@1.0.2/redirect.js
 
 # Copyright
 copyright: Copyright &copy; 2025 Yash Mittal
@@ -14,7 +14,6 @@ copyright: Copyright &copy; 2025 Yash Mittal
 # Theme
 theme:
   name: material
-  
   features:
     - announce.dismiss
     - content.code.annotate
