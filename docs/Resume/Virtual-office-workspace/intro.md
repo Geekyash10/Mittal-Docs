@@ -68,3 +68,22 @@ This quickly increases CPU, memory, and bandwidth usage, especially when everyon
 
 In real production systems (like Zoom, Google Meet, or Discord), they use SFU (Selective Forwarding Unit) servers like mediasoup, Janus, or Jitsi.
 An SFU acts like a “smart middleman” — each client sends one stream to the SFU, and the SFU forwards copies to all others. This drastically reduces the bandwidth load on clients and makes large meetings smooth.
+
+
+n simple words:
+👉 Peer.js is a JavaScript library that makes it easy to use WebRTC for peer-to-peer connections between browsers.
+
+Normally, setting up WebRTC directly is a bit complicated — you have to handle things like SDP offers, ICE candidates, and signaling manually.
+Peer.js simplifies this process by giving you a clean API to create a peer, connect to another peer, and send data, audio, or video directly between users.
+
+🧠 How it works (in simple steps):
+
+Create a peer — Each user creates a unique peer using new Peer().
+
+Connect to PeerServer — Peer.js uses a small signaling server (called a PeerServer) to help peers find and connect to each other.
+
+Exchange IDs — Each peer gets a unique ID. You just share this ID with another user to connect.
+
+Start a connection — One peer calls another peer using their ID.
+
+WebRTC takes over — Once connected, the communication happens directly between browsers, not through the server.
